@@ -3,7 +3,7 @@ class mysqlcon{
 public static void main(String agrs[]){
 try{
 Class.forName("com.mysql.jdbc.Driver");
-Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/account","root","root");
+Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/account","ADMIN","PASSWORD");
 Statement stmt =con.createStatement();
 ResultSet rs= stmt.executeQuery("select *from vgaccount");
 while(rs.next()){
